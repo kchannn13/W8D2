@@ -23,6 +23,9 @@ Array.prototype.twoSum = function () {
 }
 
 Array.prototype.transpose = function () {
+    let x = this[0].length;
+    let y = this.length;
+
     
 
 }
