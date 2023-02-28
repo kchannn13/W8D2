@@ -20,3 +20,17 @@ function logElement(el) {
    return (el * 2);
 }
 
+Array.prototype.myReduce = function(callback, initialValue) {
+    let accumulator = initialValue;
+
+    this.myEach(function(el) {accumulator = callback(accumulator, el)} )
+
+    return accumulator;
+
+
+}
+
+function sum(accumulator, el) {
+    return accumulator + el;
+}
+
